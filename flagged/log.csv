@@ -1,0 +1,3 @@
+img1,img2,output,flag,username,timestamp
+flagged\img1\d066fc9bc8bde6b81eca\webcam.png,flagged\img2\6357817d3e351934fff0\webcam.png,Verified: False,,,2024-08-13 15:59:06.451322
+flagged\img1\9237935ba9b94422d5e7\1.jpg,flagged\img2\151815cd9ba3a6cd4865\2.png,Verified: True,flagged\output 1\500ef5fefba52392d779\image.webp,flagged\output 2\fa933c899b96ceec651f\image.webp,,,2024-08-13 16:19:43.012857
