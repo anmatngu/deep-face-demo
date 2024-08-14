@@ -69,6 +69,9 @@ def verify_faces(img1, img2):
         return f"Error processing: {str(e)}", img1, img2
 
 def anti_spoofing(img1):
+    if img1 is None:
+        return "Error: The image could not be loaded.", None
+
     try:
         img1_path = "img1.jpg"
         cv2.imwrite(img1_path, img1)
