@@ -11,7 +11,7 @@ def verify_faces(img1, img2):
         cv2.imwrite(img2_path, img2)
 
         backends = [
-            'opencv', 'ssd', 'dlib', 'mtcnn', 'retinaface', 'mediapipe', 
+            'opencv', 'ssd', 'dlib', 'mtcnn', 'retinaface', 
             'yolo', 'yunet', 'centerface', 'faster_mtcnn'
         ]
         best_backend = None
@@ -56,7 +56,7 @@ def verify_faces(img1, img2):
                 cv2.rectangle(img2, (x, y), (x+w, y+h), (255, 0, 0), 2)
 
             # Additional Features:
-            recognition_result = DeepFace.find(img1_path, db_path="path_to_database")
+            recognition_result = DeepFace.find(img1_path, db_path=r"C:\Users\nguye\Documents\University\DPL302m\deep_face\my_db")
             attributes = DeepFace.analyze(img1_path, actions=['age', 'gender', 'race', 'emotion'])
 
             return (f"Verified: {best_result['verified']} with {best_backend} in {best_time:.2f} seconds\n"
